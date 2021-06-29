@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--<title>Spring Boot Thymeleaf + Spring Security</title>-->
+
+    <div th:replace="/base/header :: header-css"/>
+
+</head>
+<body>
+
+<div th:replace="/base/header :: header"/>
+
+<div class="container">
+
+    <div th:replace="/base/posts :: posts"/>
+
+    <div th:replace="/base/pagination :: pagination(URLparameter='/home')"/>
+
+</div>
+
+<div th:replace="/base/footer :: footer"/>
+
+</body>
+</html>
